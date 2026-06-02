@@ -25,6 +25,14 @@ Norwegian letter, number-row, comma, period, and dash keys are sent as physical
 HID key positions, which lets Windows/macOS/Linux produce the shifted Norwegian
 symbols normally.
 
+The Fn layer also includes firmware text macros:
+
+- `Fn + M`: personal email.
+- `Fn + N`: work email.
+- `Fn + B`: street address.
+- `Fn + V`: postcode and city.
+- `Fn + C`: full name.
+
 ## Hardware assumptions
 
 - nice!nano v2 by default, using ZMK's current `nice_nano//zmk` board target.

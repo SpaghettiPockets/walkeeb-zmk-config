@@ -31,8 +31,18 @@ Hold either `Fn` key. This is the only non-base layer.
 End   F1  F2  F3  F4  F5  F6  F7  F8  F9  F10 F11 F12
       <   >   '   *   diaeresis `   \   `
                                                   Home
-                                                  PgUp
+          Name Post Address WorkMail Gmail        PgUp
                                                        PgDn Insert
+```
+
+Fn macros:
+
+```text
+Fn + M = ivan.a.reigstad@gmail.com
+Fn + N = ivan@sagenedata.no
+Fn + B = Bentsebrugata 17d
+Fn + V = 0476 Oslo
+Fn + C = Ivan Alexander Reigstad
 ```
 
 ## Assumed matrix
