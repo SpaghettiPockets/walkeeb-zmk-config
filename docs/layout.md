@@ -55,7 +55,7 @@ r0: Esc 1 2 3 4 5 6 7 8 9 0 + Backspace
 r1: Tab Q W E R T Y U I O P AA Delete
 r2: Caps A S D F G H J K L OE AE Enter
 r3: Shift Z X C V B N M , . - Up Shift
-r4: Ctrl Win Alt Fn Space Enter [no C6] Space Fn AltGr Left Down Right
+r4: Ctrl Win Alt Fn Space Enter [no C6] Space Fn(C9) AltGr(C8) Left Down Right
 ```
 
 ## GPIO
