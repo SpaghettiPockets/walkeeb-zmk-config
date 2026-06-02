@@ -1,0 +1,9 @@
+file_format: "1"
+id: walkeeb
+name: Walkeeb
+type: shield
+url: https://github.com/SpaghettiPockets/walkeeb-zmk-config
+requires: [pro_micro]
+features:
+  - keys
+

@@ -1,0 +1,9 @@
+.build/
+.codex_tmp/
+walkeeb-zmk-config.zip
+*.bin
+*.hex
+*.uf2
+*.elf
+*.map
+*.eep
