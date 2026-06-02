@@ -40,8 +40,8 @@ The Fn layer also includes firmware text macros:
 - 5 row x 13 column matrix.
 - `col2row` diodes, meaning diode stripe/cathode side on the row side.
 - Rows on nice!nano D0-D4.
-- Columns on nice!nano D5, D6, D7, D8, D9, D10, D16, D14, D15, D18, D19,
-  D20, D21.
+- Columns on nice!nano D5, D6, D7, D8, D9, D10, D16, D14, D15, D19, D20,
+  D18, D21.
 - Bottom row has no switch at column 6, counting from 0.
 
 If you use an original nice!nano v1, change `build.yaml` from:
