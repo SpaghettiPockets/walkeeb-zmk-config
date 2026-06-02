@@ -1,7 +1,7 @@
-# Walkeeb ZMK firmware
+# Walkeeb v2 ZMK firmware
 
-This repository is a ZMK config for the Walkeeb keyboard sketch, targeting a
-nice!nano controller.
+This branch is a ZMK config for Walkeeb v2, using the same repo structure as the
+working YeloKeeb firmware and targeting a nice!nano v2 controller.
 
 Suggested GitHub repository:
 
@@ -35,7 +35,7 @@ The Fn layer also includes firmware text macros:
 
 ## Hardware assumptions
 
-- nice!nano v2 by default, using ZMK's current `nice_nano//zmk` board target.
+- nice!nano v2 using the `nice_nano_v2` board target.
 - Handwired unibody keyboard.
 - 5 row x 13 column matrix.
 - `col2row` diodes, meaning diode stripe/cathode side on the row side.
@@ -47,36 +47,36 @@ The Fn layer also includes firmware text macros:
 If you use an original nice!nano v1, change `build.yaml` from:
 
 ```yaml
-board: "nice_nano//zmk"
+board: nice_nano_v2
 ```
 
 to:
 
 ```yaml
-board: "nice_nano@1//zmk"
+board: nice_nano
 ```
 
 ## Important
 
 The row/column wiring is defined in
-`config/boards/shields/walkeeb/walkeeb.overlay`. With 5 row pins and 13 column
+`boards/shields/walkeeb_v2/walkeeb_v2.overlay`. With 5 row pins and 13 column
 pins, the matrix has 65 possible positions. The layout uses 64 because bottom
 row column 6 is intentionally empty.
 
 ## Build
 
-Push this repository to GitHub. The workflow in `.github/workflows/build.yml`
-will build firmware automatically. Download the `walkeeb-nice_nano` artifact
+Push this branch to GitHub. The workflow in `.github/workflows/build.yml`
+will build firmware automatically. Download the Walkeeb v2 artifact
 from the latest Actions run and copy the `.uf2` file to the nice!nano bootloader
 drive.
 
-The workflow also builds `settings-reset-nice_nano`, which is useful for
-clearing Bluetooth pairings.
+This v2 branch intentionally builds only the keyboard firmware artifact, so
+there is no settings-reset UF2 to mix up during testing.
 
 ## Files
 
 - `build.yaml`: GitHub Actions build matrix.
 - `config/west.yml`: ZMK dependency manifest.
-- `config/walkeeb.keymap`: your editable keymap.
-- `config/walkeeb.conf`: user ZMK settings.
-- `config/boards/shields/walkeeb/`: the custom Walkeeb shield definition.
+- `zephyr/module.yml`: tells ZMK that this repo contains board/shield files.
+- `boards/shields/walkeeb_v2/walkeeb_v2.keymap`: your editable keymap.
+- `boards/shields/walkeeb_v2/walkeeb_v2.overlay`: GPIO and matrix wiring.

@@ -1,0 +1,111 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define BASE 0
+#define FN   1
+
+#define NO_AA   LBKT
+#define NO_OE   SEMI
+#define NO_AE   SQT
+#define NO_PLUS MINUS
+#define NO_MINS SLASH
+#define NO_AT   RA(N2)
+#define NO_LT   NUBS
+#define NO_GT   LS(NUBS)
+#define NO_APOS NUHS
+#define NO_ASTR LS(NUHS)
+#define NO_DIAE RBKT
+#define NO_GRV  LS(EQUAL)
+#define NO_BSLS RA(MINUS)
+
+/ {
+    macros {
+        macro_gmail: macro_gmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <
+                &kp I &kp V &kp A &kp N &kp DOT &kp A &kp DOT
+                &kp R &kp E &kp I &kp G &kp S &kp T &kp A &kp D
+                &kp NO_AT
+                &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M
+            >;
+        };
+
+        macro_work_email: macro_work_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <
+                &kp I &kp V &kp A &kp N
+                &kp NO_AT
+                &kp S &kp A &kp G &kp E &kp N &kp E &kp D &kp A &kp T &kp A
+                &kp DOT &kp N &kp O
+            >;
+        };
+
+        macro_address: macro_address {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <
+                &kp LS(B) &kp E &kp N &kp T &kp S &kp E
+                &kp B &kp R &kp U &kp G &kp A &kp T &kp A
+                &kp SPACE &kp N1 &kp N7 &kp D
+            >;
+        };
+
+        macro_postcode: macro_postcode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <
+                &kp N0 &kp N4 &kp N7 &kp N6
+                &kp SPACE
+                &kp LS(O) &kp S &kp L &kp O
+            >;
+        };
+
+        macro_full_name: macro_full_name {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <
+                &kp LS(I) &kp V &kp A &kp N
+                &kp SPACE
+                &kp LS(A) &kp L &kp E &kp X &kp A &kp N &kp D &kp E &kp R
+                &kp SPACE
+                &kp LS(R) &kp E &kp I &kp G &kp S &kp T &kp A &kp D
+            >;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp ESC    &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &kp NO_PLUS &kp BSPC
+                &kp TAB    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp NO_AA   &kp DEL
+                &kp CAPS   &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp NO_OE &kp NO_AE   &kp RET
+                &kp LSHFT  &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA &kp DOT  &kp NO_MINS &kp UP  &kp RSHFT
+                &kp LCTRL  &kp LGUI &kp LALT &mo FN   &kp SPACE &kp RET           &kp SPACE &mo FN   &kp RALT &kp LEFT &kp DOWN &kp RIGHT
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+                &kp END    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11    &kp F12
+                &trans     &kp NO_LT &kp NO_GT &kp NO_APOS &kp NO_ASTR &kp NO_DIAE &kp NO_GRV &kp NO_BSLS &kp NO_GRV &trans &trans &trans &trans
+                &trans     &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans     &kp HOME
+                &trans     &trans   &trans   &macro_full_name &macro_postcode &macro_address &macro_work_email &macro_gmail &trans &trans &trans &kp PG_UP &trans
+                &trans     &trans   &trans   &trans   &trans   &trans           &trans   &trans   &trans   &trans   &kp PG_DN  &kp INS
+            >;
+        };
+    };
+};
