@@ -105,8 +105,8 @@
             &kp CAPSLOCK &kp A  &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L    &kp NO_OE &kp NO_AE &kp ENTER
 //          Shift      Z        X        C        V        B        N        M        ,        .        -        Up       Shift
             &kp LSHFT  &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA &kp DOT  &kp NO_MINS &kp UP &kp RSHFT
-//          Ctrl       Win      Alt      Fn       Space    Enter    <gap C6> Space    Fn       AltGr    Left     Down     Right
-            &kp LCTRL  &kp LGUI &kp LALT &mo FN   &kp SPACE &kp ENTER &kp SPACE &mo FN &kp RALT &kp LEFT &kp DOWN &kp RIGHT
+//          Ctrl       Win      Fn      Alt       Space    Enter    <gap C6> Space    Fn       AltGr    Left     Down     Right
+            &kp LCTRL  &kp LGUI &mo FN &kp LALT   &kp SPACE &kp ENTER &kp SPACE &mo FN &kp RALT &kp LEFT &kp DOWN &kp RIGHT
             >;
         };
 
