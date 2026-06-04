@@ -27,6 +27,9 @@ Norwegian base-layer keys:
 
 Hold either `Fn` key. This is the only non-base layer.
 
+The symbol keys on the QWERTY row use Windows Alt-code macros so they produce
+the same characters even if the host keyboard language changes.
+
 ```text
 End   F1  F2  F3  F4  F5  F6  F7  F8  F9  F10 F11 F12
       <   >   '   *   diaeresis `   \   `
