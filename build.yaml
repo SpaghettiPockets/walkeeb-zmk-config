@@ -1,3 +1,7 @@
 include:
   - board: nice_nano_v2
     shield: maple65
+    artifact-name: maple65-nice_nano_v2
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: settings-reset-nice_nano_v2
