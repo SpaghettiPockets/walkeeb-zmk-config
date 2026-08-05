@@ -3,5 +3,8 @@ include:
     shield: maple65
     artifact-name: maple65-nice_nano_v2
   - board: nice_nano_v2
+    shield: walkeeb_v2
+    artifact-name: walkeeb_v2-nice_nano_v2
+  - board: nice_nano_v2
     shield: settings_reset
     artifact-name: settings-reset-nice_nano_v2
