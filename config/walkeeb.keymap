@@ -120,7 +120,7 @@
 //          Caps       A        S        D        F        G        H        J        K        L        OE       AE       Home
             &trans     &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp HOME
 //          Shift      Z        X        name     post     addr     work     gmail    ,        .        -        PgUp     Shift
-            &trans     &trans   &trans   &macro_full_name &macro_postcode &macro_address &macro_work_email &macro_gmail &trans &trans &trans &kp PG_UP &trans
+            &trans     &trans   &bt BT_CLR_ALL   &macro_full_name &macro_postcode &macro_address &macro_work_email &macro_gmail &trans &trans &trans &kp PG_UP &trans
 //          Ctrl       Win      Alt      Fn       Space    Enter    <gap C6> Space    Fn       AltGr    Left     PgDn     Insert
             &trans     &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp PG_DN &kp INSERT
             >;
