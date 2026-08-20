@@ -1,7 +1,6 @@
-if SHIELD_WALKEEB
+if SHIELD_WALKEEB_V2
 
 config ZMK_KEYBOARD_NAME
     default "WalKeeb"
 
 endif
-

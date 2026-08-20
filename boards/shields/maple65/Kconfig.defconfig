@@ -1,0 +1,6 @@
+if SHIELD_MAPLE65
+
+config ZMK_KEYBOARD_NAME
+    default "Maple65"
+
+endif

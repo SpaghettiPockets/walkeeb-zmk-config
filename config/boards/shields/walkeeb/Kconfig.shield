@@ -1,3 +1,0 @@
-config SHIELD_WALKEEB
-    def_bool $(shields_list_contains,walkeeb)
-

@@ -9,7 +9,7 @@ Esc   1   2   3   4   5   6   7   8   9   0   +   Backspace
 Tab   Q   W   E   R   T   Y   U   I   O   P   AA  Delete
 Caps  A   S   D   F   G   H   J   K   L   OE  AE  Enter
 Shift Z   X   C   V   B   N   M   ,   .   -   Up  Shift
-Ctrl  Win Alt Fn  Space Enter [gap] Space Fn AltGr Left Down Right
+Ctrl  Win Fn  Alt Space Enter [gap] Space Fn AltGr Left Down Right
 ```
 
 `AA`, `OE`, and `AE` are the Norwegian letter keys after `P` and `L`.
@@ -26,6 +26,9 @@ Norwegian base-layer keys:
 ## Fn layer
 
 Hold either `Fn` key. This is the only non-base layer.
+
+The symbol keys on the QWERTY row use Windows Alt-code macros so they produce
+the same characters even if the host keyboard language changes.
 
 ```text
 End   F1  F2  F3  F4  F5  F6  F7  F8  F9  F10 F11 F12
@@ -62,7 +65,7 @@ r0: Esc 1 2 3 4 5 6 7 8 9 0 + Backspace
 r1: Tab Q W E R T Y U I O P AA Delete
 r2: Caps A S D F G H J K L OE AE Enter
 r3: Shift Z X C V B N M , . - Up Shift
-r4: Ctrl Win Alt Fn Space Enter [no C6] Space Fn AltGr Left Down Right
+r4: Ctrl Win Fn Alt Space Enter [no C6] Space Fn(C9) AltGr(C8) Left Down Right
 ```
 
 ## GPIO
@@ -96,8 +99,8 @@ C5=D10
 C6=D16
 C7=D14
 C8=D15
-C9=D18
-C10=D19
-C11=D20
+C9=D19
+C10=D20
+C11=D18
 C12=D21
 ```
