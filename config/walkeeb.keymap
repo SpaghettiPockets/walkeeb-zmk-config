@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
 #define FN   1
@@ -115,12 +116,12 @@
             bindings = <
 //          End        F1       F2       F3       F4       F5       F6       F7       F8       F9       F10      F11      F12
             &kp END    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12
-//          Tab        <        >        '        *        diaer   `        \        `        O        P        AA       Del
-            &trans     &kp NO_LT &kp NO_GT &kp NO_APOS &kp NO_ASTR &kp NO_DIAE &kp NO_GRV &kp NO_BSLS &kp NO_GRV &trans &trans &trans &trans
+//          Tab        <        >        '        *        diaer   `        \        `        O        P        BT clear BT clear all
+            &trans     &kp NO_LT &kp NO_GT &kp NO_APOS &kp NO_ASTR &kp NO_DIAE &kp NO_GRV &kp NO_BSLS &kp NO_GRV &trans &trans &bt BT_CLR &bt BT_CLR_ALL
 //          Caps       A        S        D        F        G        H        J        K        L        OE       AE       Home
             &trans     &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp HOME
 //          Shift      Z        X        name     post     addr     work     gmail    ,        .        -        PgUp     Shift
-            &trans     &trans   &bt BT_CLR_ALL   &macro_full_name &macro_postcode &macro_address &macro_work_email &macro_gmail &trans &trans &trans &kp PG_UP &trans
+            &trans     &trans   &trans   &macro_full_name &macro_postcode &macro_address &macro_work_email &macro_gmail &trans &trans &trans &kp PG_UP &trans
 //          Ctrl       Win      Alt      Fn       Space    Enter    <gap C6> Space    Fn       AltGr    Left     PgDn     Insert
             &trans     &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &kp PG_DN &kp INSERT
             >;

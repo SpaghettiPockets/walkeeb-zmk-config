@@ -29,7 +29,7 @@ Hold either `Fn` key. This is the only non-base layer.
 
 ```text
 End   F1  F2  F3  F4  F5  F6  F7  F8  F9  F10 F11 F12
-      <   >   '   *   diaeresis `   \   `
+      <   >   '   *   diaeresis `   \   `           BTClr BTClrAll
                                                   Home
           Name Post Address WorkMail Gmail        PgUp
                                                        PgDn Insert
@@ -43,6 +43,13 @@ Fn + N = ivan@sagenedata.no
 Fn + B = Bentsebrugata 17d
 Fn + V = 0476 Oslo
 Fn + C = Ivan Alexander Reigstad
+```
+
+Bluetooth controls:
+
+```text
+Fn + AA = clear the selected Bluetooth profile
+Fn + Delete = clear all Bluetooth profiles
 ```
 
 ## Assumed matrix

@@ -16,7 +16,8 @@ layers:
 
 - `BASE`: letters, modifiers, space keys, arrows, Backspace, Enter, Tab, Esc.
 - `FN`: the only function layer, containing every bottom-right legend from the
-  sketch, including F1-F12, End, Home, PgUp, PgDn, Insert, and symbols.
+  sketch, including F1-F12, End, Home, PgUp, PgDn, Insert, symbols, and
+  Bluetooth reset controls.
 
 There is no separate number layer and no separate F-row layer.
 
@@ -32,6 +33,11 @@ The Fn layer also includes firmware text macros:
 - `Fn + B`: street address.
 - `Fn + V`: postcode and city.
 - `Fn + C`: full name.
+
+Bluetooth controls are available on the Fn layer:
+
+- `Fn + AA`: clear the selected Bluetooth profile.
+- `Fn + Delete`: clear all Bluetooth profiles.
 
 ## Hardware assumptions
 
