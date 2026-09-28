@@ -6,5 +6,15 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-sleep-settings:
+    name: Preserve confirmed sleep settings
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require deep sleep disabled for both keyboards
+        shell: pwsh
+        run: ./scripts/check-sleep-settings.ps1
+
   build:
+    needs: check-sleep-settings
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
